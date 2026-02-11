@@ -10,7 +10,10 @@
   "spec": {
     "title": "Variable Conversions Test Dashboard",
     "description": "Testing all variable types and transformations",
-    "tags": ["test", "variables"],
+    "tags": [
+      "test",
+      "variables"
+    ],
     "templating": {
       "list": [
         {
@@ -42,7 +45,7 @@
           "regex": "",
           "skipUrlSync": false,
           "refresh": 1
-      },
+        },
         {
           "name": "query_var",
           "type": "query",
@@ -56,8 +59,14 @@
           "query": "label_values(up, instance)",
           "current": {
             "selected": true,
-            "text": ["All", "localhost:9090"],
-            "value": ["$__all", "localhost:9090"]
+            "text": [
+              "All",
+              "localhost:9090"
+            ],
+            "value": [
+              "$__all",
+              "localhost:9090"
+            ]
           },
           "options": [
             {
@@ -136,14 +145,16 @@
             {
               "key": "job",
               "operator": "=",
-              "value": "prometheus"
+              "value": "prometheus",
+              "origin": "dashboard"
             }
           ],
           "baseFilters": [
             {
               "key": "environment",
               "operator": "=",
-              "value": "production"
+              "value": "production",
+              "origin": "dashboard"
             }
           ],
           "hide": 0,
@@ -235,8 +246,14 @@
           "query": "",
           "current": {
             "selected": true,
-            "text": ["job", "instance"],
-            "value": ["job", "instance"]
+            "text": [
+              "job",
+              "instance"
+            ],
+            "value": [
+              "job",
+              "instance"
+            ]
           },
           "options": [
             {
@@ -257,7 +274,17 @@
           ],
           "hide": 0,
           "multi": true,
-          "skipUrlSync": false
+          "skipUrlSync": false,
+          "defaultValue": {
+            "text": [
+              "job",
+              "instance"
+            ],
+            "value": [
+              "job",
+              "instance"
+            ]
+          }
         },
         {
           "name": "switch_var",
@@ -327,8 +354,16 @@
           },
           "current": {
             "selected": true,
-            "text": ["All", "host1", "host2"],
-            "value": ["$__all", "host1", "host2"]
+            "text": [
+              "All",
+              "host1",
+              "host2"
+            ],
+            "value": [
+              "$__all",
+              "host1",
+              "host2"
+            ]
           },
           "options": [],
           "hide": 0,

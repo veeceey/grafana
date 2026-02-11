@@ -44,7 +44,11 @@
           "label": "Group By Variable",
           "hide": "dontHide",
           "skipUrlSync": false,
-          "description": "A group by variable"
+          "description": "A group by variable",
+          "defaultValue": {
+            "text": "defaultGroupBy",
+            "value": "defaultGroupBy"
+          }
         }
       },
       {
@@ -60,7 +64,8 @@
               "key": "key1",
               "operator": "=",
               "value": "value1",
-              "condition": "AND"
+              "condition": "AND",
+              "origin": "dashboard"
             },
             {
               "key": "key2",
@@ -74,7 +79,8 @@
               "key": "key3",
               "operator": "=",
               "value": "value3",
-              "condition": "AND"
+              "condition": "AND",
+              "origin": "dashboard"
             }
           ],
           "defaultKeys": [
